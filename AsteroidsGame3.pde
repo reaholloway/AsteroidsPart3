@@ -36,7 +36,6 @@ public void draw() {
     bully.get(i).show();
 
     if (bully.get(i).getX()>width) {
-
       bully.remove(i);
     } else if (bully.get(i).getY()>height) {
 
@@ -70,11 +69,11 @@ public void keyPressed() {
     silly.turn(10);
   } else if (keyCode == LEFT) {
     silly.turn(-10);
-  } else if (keyCode == RETURN) {
+  } else if (keyCode == ENTER) {
     silly.hyperspace();
   } else if (keyCode == ' ') {
     bully.add(new Bullet(silly));
-  } else if (keyCode == TAB){
+  } else if (keyCode == TAB) {
     meow.add(new Asteroid());
   }
 }
